@@ -1,0 +1,204 @@
+body {
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+  font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+.all {
+  display: flex;
+  flex-direction:row-reverse;
+  margin: 0 auto;
+}
+
+/* サイドバー */
+.side-nav {
+  width: 20%;
+  height: 100%;
+  padding-left: 2%;
+  position: fixed;
+  top: 0;
+}
+
+.side-logo {
+  height: 25px;
+  width: 90px;
+  margin: 30px 0;
+}
+
+.side-logo img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.side-contents {
+  padding-left: 16%;
+}
+
+.side-menu li a {
+  color: #fff;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 14px;
+}
+
+.side-menu li a:hover {
+  text-decoration: underline;
+}
+
+.side-menu li {
+  padding-bottom: 20px;
+}
+
+.side-icons .fab {
+  padding: 45px 10px 0 0;
+}
+
+.side-icons .fab:hover {
+  opacity: 0.7;
+}
+
+/* メインコンテンツ */
+
+.contents {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+}
+
+.message-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+  margin: 70px 0;
+  border-bottom: 3px solid white;
+  display: inline-block;
+}
+
+.textarea {
+  width: 85%;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+/* photoイメージ */
+.photo-imgs img {
+  width: 33.33%;
+}
+
+span .big-photo {
+  width: 100%;
+}
+
+/* ブランド部分 */
+.brand-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-contents {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+.contents-item {
+  width: 25%;
+  padding: 0 25px;
+  text-align: left;
+}
+
+.contents-item img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
+/* プロジェクト部分 */
+.project-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 120px;
+  border-bottom: 1px solid white;
+}
+
+.project-item {
+  padding-bottom: 70px;
+}
+
+.project-item img {
+  width: 370px;
+  height: 225px;
+  margin: 5px 20px 20px;
+  float: left;
+}
+
+.project-item p {
+  text-align: left;
+}
+
+
+/* 会社概要 */
+.company-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company-contents {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 25%;
+}
+
+.address {
+  width: 40%;
+  text-align: left;
+  margin: 20px 0;
+  padding-right: 4%;
+}
+
+.ggmap {
+  width: 60%;
+  height: 200px;
+  position: relative;
+  padding-bottom: 25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* フッター部分 */
+footer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  padding: 30px 0 70px;
+  font-size: 12px;
+}
+
+footer a {
+  color: blue;
+}
