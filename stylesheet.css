@@ -12,6 +12,124 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+  .all {
+    display: block;
+  }
+}
+
+/* ヘッダー部分 */
+header {
+  display: none;
+  width: 100%;
+  height: 60px;
+  background: rgb(0, 0, 0);
+  border-bottom: 0.5px solid #6d6c6c;
+  text-align: center;
+  position: fixed; 
+  top: 0; 
+  z-index: 10;
+}
+
+.hdr-logo {
+  margin: 15px 0;
+}
+
+.hdr-logo  img{
+  width: 90px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.sp-menu{
+  display: block;
+  padding: 18px;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sp-menu #open {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+#close.hide {
+  display: block;
+}
+
+.overlay {
+  width: 100%;
+  height: 60%;
+  font-weight: bold;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background: rgb(0, 0, 0);
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay li {
+  border-bottom: 0.5px solid #6d6c6c;  
+  opacity: 0;
+  transform: translateY(-16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay li:hover{
+  text-decoration: underline;
+}
+
+.overlay li a {
+  padding: 15px 25px 15px 5px;
+  height: 100%;
+  display: block;
+  color: #fff;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 14px;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.hdr-icons {
+  display: flex;
+}
+
+.hdr-icons :hover{
+  opacity: 0.8;
+}
+.overlay li:last-child a{
+  padding: 15px 10px;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    display: block;
+  }
+}
+
 /* サイドバー */
 .side-nav {
   width: 20%;
@@ -58,6 +176,12 @@ body {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 760px) {
+  .side-nav {
+    display: none;
+  }
+}
+
 /* メインコンテンツ */
 
 .contents {
@@ -82,7 +206,7 @@ body {
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
   font-size: 22px;
   padding-bottom: 20px;
-  margin: 70px 0;
+  margin: 50px 0;
   border-bottom: 3px solid white;
   display: inline-block;
 }
@@ -94,6 +218,23 @@ body {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 760px) {
+  .contents {
+    width: 100%;
+    position:relative;
+    top: 60px;
+  }
+
+  .message-wrapper {
+    width: 95%;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
 /* photoイメージ */
 .photo-imgs img {
   width: 33.33%;
@@ -101,6 +242,17 @@ body {
 
 span .big-photo {
   width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .photo-imgs img {
+    width: 100%;
+    height: auto;
+  }
+  
+  span .big-photo {
+    width: 100%;
+  }
 }
 
 /* ブランド部分 */
@@ -125,6 +277,26 @@ span .big-photo {
 .contents-item img {
   width: 100%;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .brand-wrapper {
+    width: 80%;
+  }
+  
+  .brand-contents {
+    display: block;
+  }
+  
+  .contents-item {
+    width: 100%;
+    padding: 0 25px 50px;
+    text-align: center;
+  }
+  
+  .contents-item img {
+    width: 70%;
+  }
 }
 
 
@@ -152,6 +324,27 @@ span .big-photo {
   text-align: left;
 }
 
+@media screen and (max-width: 760px) {
+  .project-wrapper {
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+  }
+  
+  .project-item {
+    padding-bottom: 70px;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    float: none;
+  }
+  
+  .project-item p {
+    text-align: left;
+  }
+}
 
 /* 会社概要 */
 .company-wrapper {
@@ -163,7 +356,7 @@ span .big-photo {
 .company-contents {
   display: flex;
   padding-top: 30px;
-  padding-bottom: 25%;
+  padding-bottom: 18%;
 }
 
 .address {
@@ -186,6 +379,39 @@ iframe {
   left: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 760px) {
+  .company-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .company-contents {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 18%;
+  }
+  
+  .address {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .ggmap {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 
 /* フッター部分 */
 footer {

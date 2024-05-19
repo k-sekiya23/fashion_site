@@ -14,9 +14,47 @@
   
   <!-- cssファイル読み込み -->
   <link rel="stylesheet" href="stylesheet.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <div class="hdr-logo">
+      <a href="">
+        <img src="img/logo.png" alt="ロゴ">
+      </a>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+
+      <span class="material-icons" id="close">close</span>
+    </div>
+  </header>
+  
+  <div class="overlay">
+    <nav>
+      <ul class="hdr-menu">
+        <li><a href="#">>　TOP</a></li>
+        <li><a href="#">>　MESSAGe</a></li>
+        <li><a href="#">>　GALLERY</a></li>
+        <li><a href="#">>　BRAND</a></li>
+        <li><a href="#">>　PROJECT</a></li>
+        <li><a href="#">>　COMPANY</a></li>
+        <li>
+          <div class="hdr-icons">
+            <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram-square fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube-square fa-lg"></i></a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
   <div class="all">
     <!-- サイドバー -->
     <div class="side-nav">
@@ -144,6 +182,8 @@
           </div>      
         </div>
       </div>
+
+      <script src="js/main.js"></script>
 
       <footer>
         <p>Copyright(c) 2016 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com">http://f-tpl.com</a></p>
