@@ -290,12 +290,14 @@ span .big-photo {
   
   .contents-item {
     width: 100%;
-    padding: 0 25px 50px;
+    margin: 0 auto;
+    padding: 0 0 50px;
     text-align: center;
   }
   
   .contents-item img {
-    width: 70%;
+    width: 168px;
+    height: 168px;
   }
 }
 
